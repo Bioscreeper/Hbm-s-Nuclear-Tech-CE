@@ -70,10 +70,10 @@ public class HydrotreatingRecipes extends SerializableRecipe {
         for(Map.Entry<FluidType, Tuple.Triplet<FluidStack, FluidStack, FluidStack>> recipe : recipes.entrySet()) {
             map.put(new ItemStack[] {
                             ItemFluidIcon.make(recipe.getKey(), 1000),
-                            ItemFluidIcon.make(recipe.getValue().getX().type,	recipe.getValue().getX().fill * 10, 1) },
+                            ItemFluidIcon.make(recipe.getValue().getX().type,	recipe.getValue().getX().fill * 100, 1) },
                     new ItemStack[] {
-                            ItemFluidIcon.make(recipe.getValue().getY().type,	recipe.getValue().getY().fill * 10),
-                            ItemFluidIcon.make(recipe.getValue().getZ().type,	recipe.getValue().getZ().fill * 10) });
+                            ItemFluidIcon.make(recipe.getValue().getY().type,	recipe.getValue().getY().fill * 100),
+                            ItemFluidIcon.make(recipe.getValue().getZ().type,	recipe.getValue().getZ().fill * 100) });
         }
 
         return map;
